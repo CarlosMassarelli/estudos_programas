@@ -1,0 +1,18 @@
+/*importa a função express*/
+const express = require('express'); 
+
+/*desacopla rotas do express*/
+const routes = express.Router(); 
+
+routes.post('/ongs', (request, response) => {
+  const body = request.body;
+  console.log(body);
+
+  return response.json ({
+    evento: 'Semana OmniStack 11.0',
+    aluno: 'Carlos'
+  });
+});
+
+module.exports = routes;
+

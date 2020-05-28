@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+
+<html><!-- tag HTML-->
+
+  <head>
+    <!--recebe configurações da pagina-->
+    <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Aprenda Direito Completo</title>
+    
+    <style>
+      /*CSS
+      Cascading StyleSheet
+      */
+      /*<!--seletor = propriedade:valor-->*/
+      body { 
+        background: rgb(223, 250, 223);
+        color: rgb(0, 104, 0);
+        text-align: center;
+      }
+      button {
+        
+        color: greenyellow;
+        border: none;
+        font-weight: bold;
+      }
+      .fat {
+        color: grey;
+        text-align: right;
+      }
+      .footer{
+        text-align: left;
+      }
+      #footer a{
+        color: rgb(147, 74, 216);
+        text-decoration: none;
+      }
+      .hide {
+        display: none;
+      }
+      body img {
+
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Aprenda Direito Completo</h1>
+    <img src="marca_limpa.png" alt="imagem da logomarca">
+    <p>
+      Um local para conhecer e aprender o Direito
+      de forma integral e interligada
+      como o direito deve ser
+    </p>
+    <p class="fat">
+      Para entender melhor... faça seu cadastro 
+      e começe a explorar o nosso conteúdo
+    </p>
+    
+      <button>+ adicionar ideia</button>
+      <button class="fat"> ver ideias </button>
+  
+    <p id="footer">uma 💖 empresa 100% 
+      <a href="http://aprendadireitocompleto.com.br">
+      </a> brasileira
+    </p>
+
+    </body>
+    
+    <script>
+      document
+        .querySelector("button.fat")
+        .addEventListener("click", function(){
+          document
+            .querySelector("#footer")
+            .classList
+            .toggle("hide")
+        })
+    </script>
+
+</html>
